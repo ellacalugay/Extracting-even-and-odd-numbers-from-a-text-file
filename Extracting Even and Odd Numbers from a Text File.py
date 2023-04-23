@@ -4,7 +4,9 @@
 #Pseudocode
 # Open the file "numbers.txt" for reading.
 with open ("numbers.txt", "r") as numbers:
+    
 # Read the contents of the file into a list of strings.
+    all_numbers = numbers.readlines()
 # Create two new empty lists to store even and odd numbers.
 # Loop through the file "numbers.txt" and check each number.
     # Convert the string to an integer.
