@@ -17,6 +17,10 @@ for num in all_numbers:
     # Convert the string to an integer.
     num = int(num.strip())
     # Check if the number is even or odd and add it to the corresponding list.
+    if num % 2 == 0:
+        evens.append(num)
+    else:
+        odds.append(num)
 # If the number is even, add it to the list of even numbers (even.txt).
 # If the number is odd, add it to the list of odd numbers (odd.txt).
 # End of the code.
