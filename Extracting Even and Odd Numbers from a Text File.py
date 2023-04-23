@@ -21,6 +21,11 @@ for num in all_numbers:
         evens.append(num)
     else:
         odds.append(num)
+
 # If the number is even, add it to the list of even numbers (even.txt).
+with open("even.txt", "w") as even:
+    for num in evens:
+        even.write(str(num) + '\n')
+        
 # If the number is odd, add it to the list of odd numbers (odd.txt).
 # End of the code.
