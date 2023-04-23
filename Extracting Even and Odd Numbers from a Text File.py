@@ -26,6 +26,10 @@ for num in all_numbers:
 with open("even.txt", "w") as even:
     for num in evens:
         even.write(str(num) + '\n')
-        
+
 # If the number is odd, add it to the list of odd numbers (odd.txt).
+with open("odd.txt", "w") as odd:
+    for num in odds:
+        odd.write(str(num) + '\n') 
+        
 # End of the code.
