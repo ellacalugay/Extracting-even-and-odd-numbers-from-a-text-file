@@ -7,11 +7,13 @@ with open ("numbers.txt", "r") as numbers:
 
 # Read the contents of the file into a list of strings.
     all_numbers = numbers.readlines()
-    
+
 # Create two new empty lists to store even and odd numbers.
 evens = []
 odds = []
+
 # Loop through the file "numbers.txt" and check each number.
+for num in all_numbers:
     # Convert the string to an integer.
     # Check if the number is even or odd and add it to the corresponding list.
 # If the number is even, add it to the list of even numbers (even.txt).
