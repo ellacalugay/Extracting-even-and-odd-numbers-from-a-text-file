@@ -73,5 +73,16 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
                 odd_label = tk.Label(frame, text=odd, bg="magenta")
                 # Add the label to the frame at the appropriate row and column
                 odd_label.grid(row=idx+3, column=1)
+    
+    # Define a function to load and display either even or odd numbers based on the selected mode
+    def load_output():
+        # Check the value of the mode variable to determine which function to call
+        if mode.get() == "Even Numbers":
+            # If "Even Numbers" is selected, call the load_evens() function
+            load_evens()
+        else:
+            # Otherwise, call the load_odds() function
+            load_odds()
+
 
 # End of the code.
