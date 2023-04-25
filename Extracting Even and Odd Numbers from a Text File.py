@@ -2,6 +2,7 @@
 # Creating a program that reads a txt file then extract the even and odd numbers then place it in a two additional text files: "even.txt" with even numbers, and "odd.txt" with odd numbers.
 
 #Pseudocode
+
 # Import the necessary module 
 from statistics import mode
 import tkinter as tk
