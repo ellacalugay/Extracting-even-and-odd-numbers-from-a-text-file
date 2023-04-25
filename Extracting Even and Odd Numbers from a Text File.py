@@ -119,5 +119,8 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
 
     load_button = tk.Button(root, text="Load Output", command=load_output, bg="green")
     load_button.pack(side="right", padx=(0,10))
-    
+
+# Start the tkinter event loop
+root.mainloop()
+
 # End of the code.
