@@ -24,8 +24,8 @@ odd_label.grid(row=0, column=1, padx=10)
 top_border = tk.Frame(frame, bg="blue", height=2, width=300)
 top_border.grid(row=1, columnspan=2, pady=(10,0))
 
-# Open the file "numbers.txt" for reading.
-with open ("numbers.txt", "r") as numbers:
+# Open the file named numbers.txt for reading, even.xt for write and odd.txt for write
+with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, open("odd.txt", "w") as odd_file:
 
 # Read the contents of the file into a list of strings.
     all_numbers = numbers.readlines()
