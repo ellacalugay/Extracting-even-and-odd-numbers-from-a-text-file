@@ -3,6 +3,7 @@
 
 #Pseudocode
 # Import the necessary module 
+from statistics import mode
 import tkinter as tk
 
 # Create a tkinter window
@@ -104,4 +105,19 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
                 # If it's not one of the specific widgets, destroy it
                 child.destroy()
 
+    # Create buttons for switching between even and odd numbers output
+    mode = tk.StringVar()
+    mode.set("Even Numbers")
+    even_button = tk.Radiobutton(root, text="Even", variable=mode, value="Even Numbers", bg="yellow")
+    even_button.pack(side="left", padx=(10,10))
+
+    odd_button = tk.Radiobutton(root, text="Odd", variable=mode, value="Odd Numbers", bg="red")
+    odd_button.pack(side="left", padx=(0,10))
+
+    close_button = tk.Button(root, text="Close", command=lambda: [clear_output(), load_close()], bg="blue")
+    close_button.pack(side="right", padx=(0,5))
+
+    load_button = tk.Button(root, text="Load Output", command=load_output, bg="green")
+    load_button.pack(side="right", padx=(0,10))
+    
 # End of the code.
