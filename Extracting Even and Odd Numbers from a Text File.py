@@ -5,6 +5,10 @@
 # Import the necessary module 
 import tkinter as tk
 
+# Create a tkinter window
+root = tk.Tk()
+root.title("PROBLEM 1")
+
 # Open the file "numbers.txt" for reading.
 with open ("numbers.txt", "r") as numbers:
 
