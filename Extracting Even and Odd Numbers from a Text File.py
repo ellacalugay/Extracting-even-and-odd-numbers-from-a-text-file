@@ -41,7 +41,9 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
         # Check if the number is even or odd and add it to the corresponding list.
         if num % 2 == 0:
             evens.append(num)
+            even_file.write(str(num) + "\n")
         else:
-            odds.append(num) 
-                   
+            odds.append(num)
+            odd_file.write(str(num) + "\n")
+
 # End of the code.
