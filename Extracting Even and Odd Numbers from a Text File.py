@@ -9,6 +9,10 @@ import tkinter as tk
 root = tk.Tk()
 root.title("PROBLEM 1")
 
+# Create a frame for the output
+frame = tk.Frame(root, bd=2, relief="groove")
+frame.pack(padx=10, pady=10)
+
 # Open the file "numbers.txt" for reading.
 with open ("numbers.txt", "r") as numbers:
 
