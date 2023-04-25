@@ -60,4 +60,18 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
                 # Add the label to the frame at the appropriate row and column
                 even_label.grid(row=idx+3, column=0)
 
+    # Define a function to load and display odd numbers from a text file
+    def load_odds():
+        clear_output()
+        # Open the "odd.txt" file in read mode
+        with open("odd.txt", "r") as odd_file:
+            # Read the contents of the file and store them in a list
+            odds = odd_file.readlines()
+            # Iterate over the odd numbers in the list
+            for idx, odd in enumerate(odds):
+                # Create a Tkinter label for each odd number
+                odd_label = tk.Label(frame, text=odd, bg="magenta")
+                # Add the label to the frame at the appropriate row and column
+                odd_label.grid(row=idx+3, column=1)
+
 # End of the code.
