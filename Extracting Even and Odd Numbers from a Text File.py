@@ -46,4 +46,18 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
             odds.append(num)
             odd_file.write(str(num) + "\n")
 
+    # Define a function to load and display even numbers from a text file
+    def load_evens():
+        clear_output()
+        # Open the "even.txt" file in read mode
+        with open("even.txt", "r") as even_file:
+            # Read the contents of the file and store them in a list
+            evens = even_file.readlines()
+            # Iterate over the even numbers in the list
+            for idx, even in enumerate(evens):
+                # Create a Tkinter label for each even number
+                even_label = tk.Label(frame, text=even, bg="magenta")
+                # Add the label to the frame at the appropriate row and column
+                even_label.grid(row=idx+3, column=0)
+
 # End of the code.
