@@ -84,5 +84,15 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
             # Otherwise, call the load_odds() function
             load_odds()
 
+    # Define a function to close the GUI and terminate the program
+    def load_close():
+        # Loop over all the children of the frame
+        for bye in frame.winfo_children():
+            # Check if the child is not one of the three specific widgets
+            if bye != top_border and bye != even_label and bye != odd_label:
+                # If it's not one of the specific widgets, destroy it
+                bye.destroy()       
+        # Close the root window, terminating the program
+        root.destroy()
 
 # End of the code.
