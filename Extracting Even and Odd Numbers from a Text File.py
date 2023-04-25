@@ -13,6 +13,10 @@ root.title("PROBLEM 1")
 frame = tk.Frame(root, bd=2, relief="groove")
 frame.pack(padx=10, pady=10)
 
+# Create labels for the output files with border and border color
+even_label = tk.Label(frame, text="Even Numbers", font=("Arial", 12, "bold"), bg="yellow", bd=2, relief="groove")
+even_label.grid(row=0, column=0, padx=10)
+
 # Open the file "numbers.txt" for reading.
 with open ("numbers.txt", "r") as numbers:
 
