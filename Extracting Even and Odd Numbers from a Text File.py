@@ -17,6 +17,9 @@ frame.pack(padx=10, pady=10)
 even_label = tk.Label(frame, text="Even Numbers", font=("Arial", 12, "bold"), bg="yellow", bd=2, relief="groove")
 even_label.grid(row=0, column=0, padx=10)
 
+odd_label = tk.Label(frame, text="Odd Numbers", font=("Arial", 12, "bold"), bg="red", bd=2, relief="groove")
+odd_label.grid(row=0, column=1, padx=10)
+
 # Open the file "numbers.txt" for reading.
 with open ("numbers.txt", "r") as numbers:
 
