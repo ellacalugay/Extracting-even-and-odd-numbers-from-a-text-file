@@ -31,27 +31,17 @@ with open ("numbers.txt", "r") as numbers, open("even.txt", "w") as even_file, o
     all_numbers = numbers.readlines()
 
 # Create two new empty lists to store even and odd numbers.
-evens = []
-odds = []
+    evens = []
+    odds = []
 
-# Loop through the file "numbers.txt" and check each number.
-for num in all_numbers:
-    # Convert the string to an integer.
-    num = int(num.strip())
-    # Check if the number is even or odd and add it to the corresponding list.
-    if num % 2 == 0:
-        evens.append(num)
-    else:
-        odds.append(num)
-
-# If the number is even, add it to the list of even numbers (even.txt).
-with open("even.txt", "w") as even:
-    for num in evens:
-        even.write(str(num) + '\n')
-
-# If the number is odd, add it to the list of odd numbers (odd.txt).
-with open("odd.txt", "w") as odd:
-    for num in odds:
-        odd.write(str(num) + '\n') 
-        
+    # Loop through the file "numbers.txt" and check each number.
+    for num in all_numbers:
+        # Convert the string to an integer.
+        num = int(num.strip())
+        # Check if the number is even or odd and add it to the corresponding list.
+        if num % 2 == 0:
+            evens.append(num)
+        else:
+            odds.append(num) 
+                   
 # End of the code.
